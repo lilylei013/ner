@@ -1,0 +1,26 @@
+database:
+  ip:10.2.152.197
+
+spring:
+  profiles:
+   active:
+    -test
+  pgsql:
+    datasource:  
+      url: jdbc:postgresql://dbserver.ip:5432/tsdata
+      username: tsdata
+      password: milan123
+      driver-class-name: org.postgresql.Driver
+      maxActive: 50
+      initialSize: 10
+      maxWait: 60000
+      minIdle: 6
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20 
+    

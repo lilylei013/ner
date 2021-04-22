@@ -1,0 +1,10 @@
+server:
+  port:8080
+
+spring:
+  datasource:
+    username:tsdata
+    password:milan123
+    url:
+    driver-class-name:
+    
